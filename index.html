@@ -76,10 +76,11 @@
         return;
       }
 
-      fetch("https://script.google.com/macros/s/AKfycbxQGKORoaKIeaLnYeTI8xrITvh6bsNqZutCWFAxGBTAD614jvHRtH6LzhSXAcNDgSzc/exec", {
-        method: "POST",
-        body: new URLSearchParams({ email })
-      })
+fetch("https://script.google.com/macros/s/AKfycbxDd2zxDbk9I5G4OpTIwz53vl_vPjXQDNsqw_6nOSijog53rPJMhiZzLD8qUdn6Cbfk/exec", {
+  method: "POST",
+  body: new URLSearchParams({ email })
+})
+
       .then(res => res.text())
       .then(data => {
         msg.textContent = "¡Gracias por suscribirte! 🥳";
@@ -94,3 +95,4 @@
   </script>
 </body>
 </html>
+
